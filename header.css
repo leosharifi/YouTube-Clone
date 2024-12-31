@@ -1,0 +1,399 @@
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    height: fit-content;
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    background: var(--background-c);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.rowOne {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.youtubeLogo {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    column-gap: 24px;
+}
+
+.sidebar {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.sidebar:hover {
+    background: var(--hover);
+}
+.logo {
+    width: 100px;
+    height: 50px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.searchBar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchInput {
+    height: 25px;
+    width: 640px;
+    align-self: center;
+    padding: 18px 200px 20px 20px;
+    font-size: 15px;
+    font-style: italic;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    box-shadow: 0 1px 5px inset;
+    border: 1px solid var(--background-c);
+    outline-color: var(--border);
+}
+
+.searchInput::placeholder {
+    font-size: 15px;
+}
+
+.searchbutton {
+    padding: 9px 20px;
+    font-size: 20px;
+    border: 1px solid var(--border);
+    background: var(--hover);
+    cursor: pointer;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.mic {
+    margin-left: 20px;
+    padding: 2px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+.mic:hover {
+    background: var(--hover);
+    cursor: pointer;
+}
+
+.headerButtons {    
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.createbutton {
+    display: flex;
+    align-items: center;
+    background: var(--hover);
+    padding: 0 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: opacity 1s ease-in-out;
+}
+
+.createbutton:hover {
+    opacity: 0.5;
+}
+
+.plus {
+    color: var(--font-color);
+    font-size: 30px;
+    font-weight: 590;
+}
+
+.createText {
+    margin-left: 5px;
+}
+
+.notific {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.creater {
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+}
+
+.rowTwo {
+    margin: 10px 0 0 0;
+    width: fit-content;
+    position: relative;
+    right: 0;
+    left: 175px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.rowTwo span {
+    background: var(--hover);
+    color: (--font-color);
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.rowTwo span:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+
+
+
+
+
+/*
+Responsive part
+*/
+
+
+@media (min-width: 0) and (max-width: 320px) {
+    .header {
+        justify-content: flex-start;
+        padding-right: 0;
+        padding-left: 5px;
+    }
+    
+    .youtubeLogo {
+        column-gap: 0;
+    }
+    
+    .sidebar {
+       display: none;
+    }
+    
+    
+    .logo {
+        width: 100px;
+        height: 50px;
+    }
+    
+    .searchBar {
+        display: none;
+    }
+    .mic {
+        display: none;
+    }
+    
+    .mic:hover {
+        display: none;
+    }
+    
+    .headerButtons {    
+        column-gap: 0;
+    }
+    
+    .createbutton {
+        display: none;
+    }
+    
+    .createbutton:hover {
+        display: none;
+    }
+    
+    .notific {
+        display: none;
+    }
+    .creater {
+        width: 40px;
+        height: 40px;
+        border-radius: 25px;
+    }
+    
+    .rowTwo {
+        left: 8px;
+        column-gap: 10px;
+    }
+
+    .displayProperty {
+        display: none;
+    }
+    
+ }
+ @media (min-width: 321px) and (max-width: 400px) {
+    .header {
+        justify-content: flex-start;
+        padding-right: 0;
+        padding-left: 5px;
+    }
+    
+    .youtubeLogo {
+        column-gap: 0;
+    }
+    
+    .sidebar {
+       display: none;
+    }
+    
+    
+    .logo {
+        width: 100px;
+        height: 50px;
+    }
+    
+    .searchBar {
+        display: none;
+    }
+    .mic {
+        display: none;
+    }
+    
+    .mic:hover {
+        display: none;
+    }
+    
+    .headerButtons {    
+        column-gap: 0;
+    }
+    
+    .createbutton {
+        display: none;
+    }
+    
+    .createbutton:hover {
+        display: none;
+    }
+    
+    .notific {
+        display: none;
+    }
+    .creater {
+        width: 40px;
+        height: 40px;
+        border-radius: 25px;
+    }
+    
+    .rowTwo {
+        left: 8px;
+        column-gap: 10px;
+    }
+
+    .displayProperty {
+        display: none;
+    }
+ }
+ @media (min-width: 401px) and (max-width: 500px) {
+     .header {
+        justify-content: flex-start;
+        padding-right: 0;
+        padding-left: 5px;
+    }
+    
+    .youtubeLogo {
+        column-gap: 0;
+    }
+    
+    .sidebar {
+       display: none;
+    }
+    
+    
+    .logo {
+        margin-left: 5px;
+        width: 100px;
+        height: 50px;
+    }
+    
+    .searchBar {
+        display: none;
+    }
+    .mic {
+        display: none;
+    }
+    
+    .mic:hover {
+        display: none;
+    }
+    
+    .headerButtons {    
+        column-gap: 0;
+    }
+    
+    .createbutton {
+        display: none;
+    }
+    
+    .createbutton:hover {
+        display: none;
+    }
+    
+    .notific {
+        display: none;
+    }
+    
+    .rowTwo {
+        left: 8px;
+        column-gap: 10px;
+    }
+
+    .displayProperty {
+        display: none;
+    }
+ }
+ @media (min-width: 501px) and (max-width: 600px) {
+     /*300% Tablet*/
+ }
+ @media (min-width: 601px) and (max-width: 750px) {
+     /*250% Tablet*/
+ }
+ @media (min-width: 751px) and (max-width: 900px) {
+     /*160% to 200% laptop*/
+ }
+ @media (min-width: 901px) and (max-width: 1120px) {
+     /*150% laptop*/
+ }
+ @media (min-width: 121px) and (max-width: 1300px) {
+     /*120% laptop*/
+ }
+ @media (min-width: 1301px) and (max-width: 1500px) {
+     /*110 laptop*/
+ }
+ @media (min-width: 1501px) and (max-width: 1700px) {
+     /*My Laptop*/
+ }
+ @media (min-width: 1701px) and (max-width: 1850px)  {
+     /*90% laptop*/
+ }
+ @media (min-width: 1851px) and (max-width: 2000px) { 
+     /*80% largelaptop*/
+ }
+ @media (min-width: 2001px) and (max-width: 2200px) {
+     /*75% largelaptop*/
+ }
+ @media (min-width: 2201px) and (max-width: 2500px) {
+      /*67% largelaptop*/
+ }
+ @media (min-width: 2501px) and (max-width: 3000px) {
+    /*50% to 60% Desktop*/
+ }
+ @media (min-width: 3001px) and (max-width: 4000px) {
+     /*50% Desktop*/
+ }
+ @media (min-width: 4001px) and (max-width: 7000px) {
+     /*The last size Desktop*/   
+ }

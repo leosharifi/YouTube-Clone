@@ -1,0 +1,52 @@
+:root {
+    --background-c: #1F271B;
+    --text-c: #F52F57;
+    --font-color: #EBEBEB;
+    --background-inbox-c: #1F271B;
+    --scroolbar: #7DDE92;
+    --hover: #3083DC;
+   
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    :root {
+        --background-c: #EBEBEB;
+        --border: #F52F57;
+        --font-color: #1F271B;
+        --background-inbox-c: #3083DC;
+        --scroolbar: #F52F57;
+        --hover: #7DDE92;
+    }
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--background-c);
+}
+
+html {
+    font-size: 16px;
+}
+
+* {
+    font-family: "Kanit", serif;
+    font-weight: 300;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+iframe:hover {
+    border-radius: 0;
+}
+
+h5 {
+    margin: 0;    
+    font-size: 14px;
+    margin-left: 2px;
+    margin-bottom: 7px;
+}
+
